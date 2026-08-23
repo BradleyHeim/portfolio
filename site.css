@@ -33,6 +33,7 @@ nav a:hover, nav a.active { color: var(--sky) !important; }
 .stat-box .number, .highlight-card a, .contact-link { color: #0879bd !important; }
 .badge-lead, .leadership-badge { background: var(--sky) !important; color: var(--ink) !important; }
 .project-image img { border: 1px solid #d5e7f2; }
+.highlights-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; max-width: 900px; margin: 0 auto; }
 footer { background: var(--ink) !important; border-top: 1px solid rgba(93,184,255,.2); }
 .eyebrow { font: 500 .78rem/1 'DM Mono', monospace; letter-spacing: .11em; text-transform: uppercase; color: var(--sky); margin-bottom: 1rem; }
 .role-focus { max-width: 44rem; font-size: 1.1rem; line-height: 1.7; color: #d8ebf8; margin-bottom: 2rem; }
@@ -42,4 +43,5 @@ footer { background: var(--ink) !important; border-top: 1px solid rgba(93,184,25
   .nav-container { padding: .8rem 1rem !important; }
   nav ul { gap: .65rem 1rem !important; font-size: .88rem; }
   .hero { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 4rem !important; }
+  .highlights-grid { grid-template-columns: 1fr !important; }
 }
