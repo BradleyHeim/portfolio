@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #071526;
+  --ink-soft: #12314e;
+  --sky: #3bb5ff;
+  --gold: #cfb991;
+  --mist: #eef5fa;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; color: var(--ink) !important; }
+nav { background: rgba(7, 21, 38, .92) !important; border-bottom: 1px solid rgba(93, 184, 255, .22); box-shadow: none !important; }
+.nav-logo, nav a { color: #f4f8fb !important; }
+nav a:hover, nav a.active { color: var(--sky) !important; }
+.hero, .page-header, .contact-section {
+  background: radial-gradient(circle at 75% 30%, rgba(59,181,255,.22), transparent 30%), linear-gradient(135deg, #06111f 0%, #12314e 55%, #071526 100%) !important;
+}
+.hero::after, .page-header::after, .contact-section::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .22;
+  background-image: linear-gradient(rgba(119,202,255,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(119,202,255,.14) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.hero-content, .page-header-content, .contact-container { z-index: 1 !important; }
+.hero-text h1, .page-header h1, .contact-container h1 { letter-spacing: -.055em; }
+.hero-text .subtitle, .page-header p { color: #d8ebf8; }
+.btn-primary, .availability-badge { background: var(--sky) !important; border-color: var(--sky) !important; color: var(--ink) !important; }
+.btn-secondary { border-color: rgba(255,255,255,.7) !important; }
+.about, .projects-section, .experience-section, .leadership-section { background: #f7fbfe !important; }
+.about h2, .highlights h2, .projects-section h2, .experience-section h2, .leadership-section h2 { color: var(--ink) !important; }
+.stat-box, .highlight-card, .experience-item, .leadership-item { border: 1px solid #d8e7f0; box-shadow: 0 10px 30px rgba(7,21,38,.06) !important; }
+.stat-box .number, .highlight-card a, .contact-link { color: #0879bd !important; }
+.badge-lead, .leadership-badge { background: var(--sky) !important; color: var(--ink) !important; }
+.project-image img { border: 1px solid #d5e7f2; }
+footer { background: var(--ink) !important; border-top: 1px solid rgba(93,184,255,.2); }
+.eyebrow { font: 500 .78rem/1 'DM Mono', monospace; letter-spacing: .11em; text-transform: uppercase; color: var(--sky); margin-bottom: 1rem; }
+.role-focus { max-width: 44rem; font-size: 1.1rem; line-height: 1.7; color: #d8ebf8; margin-bottom: 2rem; }
+.hero-image img { border: 1px solid rgba(112,207,255,.65); }
+@media (max-width: 968px) {
+  nav { position: sticky !important; }
+  .nav-container { padding: .8rem 1rem !important; }
+  nav ul { gap: .65rem 1rem !important; font-size: .88rem; }
+  .hero { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 4rem !important; }
+}
